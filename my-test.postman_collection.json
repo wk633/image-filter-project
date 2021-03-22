@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "9e0a6c35-726f-49f9-a46c-6d42fa5228d8",
+		"name": "cloud-cdnd-c2-final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "elastic beanstalk test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://image-filter-server-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://www.gstatic.com/webp/gallery/4.sm.jpg",
+					"protocol": "http",
+					"host": [
+						"image-filter-server-dev",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://www.gstatic.com/webp/gallery/4.sm.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost:8082",
+			"type": "string"
+		}
+	]
+}
